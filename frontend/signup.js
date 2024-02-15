@@ -4,6 +4,7 @@ const checkPassword = () => {
     const formData = new FormData(form);
     const password1 = formData.get("password");
     const password2 = formData.get("password2");
+
     if (password1==password2) {
         return true;
     }else return false;
@@ -25,15 +26,15 @@ const handleSubmit = async (event) => {
 const data = await res.json();
 
 if (data === "200") {
-    alert("회원 가입에 성공했습니다.");
+    alert("회원 가입에 성공했습니다");
     window.location.pathname = "/login.html";
-    
 }
-     }else{
+    
+}else{
     div.innerText = "비밀번호가 같지 않습니다";
     div.style.color = "red";
     }
 };
 
 
-form,addEventListener("submit", handleSubmit);
+form.addEventListener("submit", handleSubmit);
