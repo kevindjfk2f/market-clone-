@@ -1,13 +1,4 @@
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #eaeaea;
-    background-color: white;
-  }
-  
+
   .footer-block {
     display: flex;
     justify-content: space-evenly;
@@ -15,12 +6,12 @@ footer {
   }
   
   .footer-icons {
-    font-size: 6px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 10px 0 10px;
+    margin: 0 15px ;
     cursor: pointer;
   }
   
@@ -46,7 +37,7 @@ footer {
   }
   
   .footer-icons__img {
-    width: 30px;
+    width: 40px;
   }
   
   .footer-icons:hover .footer-icons__img {
